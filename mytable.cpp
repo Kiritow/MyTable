@@ -12,7 +12,7 @@
 #include <vector>
 using namespace std;
 
-#include "MyTable.h"
+#include "MyTable.hpp"
 
 namespace _internal_mytable
 {
