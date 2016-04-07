@@ -12,7 +12,7 @@ namespace _internal_mytable
 struct table;
 }// End of namespace _internel_mytable
 
-
+using FUNC_PLPV = void(*)(long*,void*);
 
 namespace mytable
 {
