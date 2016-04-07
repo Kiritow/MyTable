@@ -12,7 +12,9 @@ namespace _internal_mytable
 struct table;
 }// End of namespace _internel_mytable
 
+
 using FUNC_PLPV = void(*)(long*,void*);
+
 
 namespace mytable
 {
@@ -50,7 +52,6 @@ void foreach_col(TABLEHANDLE handle,int Col,long FromLine,long ToLine,FUNC_PLPV 
 
 }// End of namespace mytable
 
-/// Implements
-#include "MyTable.cpp"
+
 
 #endif // End of HC_TECH_GITHUB_PROJECT_MYTABLE_HEAD
