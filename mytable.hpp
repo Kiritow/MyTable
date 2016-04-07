@@ -36,7 +36,7 @@ void save_table(TABLEHANDLE handle);
 void close_table(TABLEHANDLE handle);
 
 /// Add a new column to a table
-int addcol(TABLEHANDLE handle,int AddAfterCol,long Sizeof_DataToFill,void* DataToFill);
+int addcol(TABLEHANDLE handle,int AddAfterCol,long Sizeof_DataToFill,void* DataToFill,const string& NewColName="");
 
 /// Add a new line to a table
 int addline(TABLEHANDLE handle,int AddAfterLine,long Sizeof_DataToFill,void* DataToFill);
