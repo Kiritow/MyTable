@@ -246,7 +246,35 @@ namespace mytable
         {
             vector<_internal_mytable::datapack> dpk;
             _internal_mytable::datapack* ppack;
+            ppack=new _internal_mytable::datapack(sz);
+            if(ppack==nullptr)
+            {
+                setcallret(callret,callbackret::NO_MEM);
+                delete handle;
+                return nullptr;
+            }
+            fread(ppack->getdata(),sz,1,fp);
+            dpk.push_back(*ppack);
+            delete ppack;
+            for(size_t i=1;i<handle->colname.size();i++)
+            {
+                fread(&sz,sizeof(long),1,fp);
+                ppack=new _internal_mytable::datapack(sz);
+                if(ppack==nullptr)
+                {
+                    setcallret(callret,callbackret::NO_MEM);
+                    delete handle;
+                    return nullptr;
+                }
+                fread(ppack->getdata(),sz,1,fp);
+                dpk.push_back(*ppack);
+                delete ppack;
+            }
+            handle->data.push_back(dpk);
         }
+        fclose(fp);
+        handle->saved=true;
+        return handle;
     }
 }/// End of namespace mytable
 
