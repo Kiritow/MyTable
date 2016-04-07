@@ -39,7 +39,7 @@ int addcol(TABLEHANDLE handle,int AddAfterCol,long Sizeof_DataToFill,void* DataT
 int addline(TABLEHANDLE handle,int AddAfterLine,long Sizeof_DataToFill,void* DataToFill);
 
 /// Change the title of a column
-int setcolname(TABLEHANDLE handle,int ColumnID,const char* TargetName);
+int setcolname(TABLEHANDLE handle,int ColumnID,const string& TargetName);
 
 /// Get raw data by position
 void* getrawdata(TABLEHANDLE handle,int Line,int Col,long* Sizeof_TargetData,void* DataBuffer);
