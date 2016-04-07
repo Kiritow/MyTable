@@ -5,6 +5,9 @@
 #ifndef HC_TECH_GITHUB_PROJECT_MYTABLE_HEAD
 #define HC_TECH_GITHUB_PROJECT_MYTABLE_HEAD
 
+#include <string>
+using namespace std;
+
 /// Declarations
 
 namespace _internal_mytable
