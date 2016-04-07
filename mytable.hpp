@@ -45,10 +45,10 @@ int addline(TABLEHANDLE handle,int AddAfterLine,long Sizeof_DataToFill,void* Dat
 int setcolname(TABLEHANDLE handle,int ColumnID,const string& TargetName);
 
 /// Get raw data by position
-void* getrawdata(TABLEHANDLE handle,int Line,int Col,long* Sizeof_TargetData,void* DataBuffer);
+void* getrawdata(TABLEHANDLE handle,int Line,int Col,long* Sizeof_TargetData,void* DataBuffer,int* callret=nullptr);
 
 /// Set raw data by position
-void* setrawdata(TABLEHANDLE handle,int Line,int Col,long Sizeof_Data,const void* SourceBuffer);
+void* setrawdata(TABLEHANDLE handle,int Line,int Col,long Sizeof_Data,const void* SourceBuffer,int* callret=nullptr);
 
 /// Search the same col in target lines
 void foreach_col(TABLEHANDLE handle,int Col,long FromLine,long ToLine,FUNC_PLPV callback_func);
