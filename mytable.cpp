@@ -12,8 +12,6 @@
 #include <vector>
 using namespace std;
 
-#include "MyTable.hpp"
-
 namespace _internal_mytable
 {
     struct datapack
