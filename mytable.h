@@ -11,7 +11,7 @@ Written in C/C++.
 Some APIs are provided to operate the database. ( Listed in MyTable.hpp )
 */
 
-#include "MyTable.hpp"
-#include "MyTable.cpp"
+#include "mytable_config.hpp"
+#include "mytable.cpp"
 
 #endif /// End of HC_TECH_GITHUB_PROJECT_MYTABLE_H
