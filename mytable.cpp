@@ -234,7 +234,7 @@ namespace mytable
         fclose(fp);
 
         handle->dbaddr=FileAddress;
-        fp=fopen(FileAddress,"r");
+        fp=fopen(FileAddress,"rb");
         fread(&handle->version,sizeof(double),1,fp);
         if(handle->version-MYTABLE_VERSION>0.01)
         {
@@ -329,7 +329,7 @@ namespace mytable
         int lsz=handle->data.size();
         for(int i=0;i<lsz;i++)
         {
-            int wsz=handle->data.at(0).size();
+            int wsz=handle->data.at(i).size();
             for(int j=0;j<wsz;j++)
             {
                 long datasize=handle->data.at(i).at(j).getsize();
