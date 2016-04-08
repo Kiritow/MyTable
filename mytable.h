@@ -8,7 +8,7 @@
 MyTable
 MyTable is a light open-source self-made cross-platform database software.
 Written in C/C++.
-Some APIs are provided to operate the database. ( Listed in MyTable.hpp )
+Some APIs are provided to operate the database. ( Listed in mytable_config.hpp )
 */
 
 #include "mytable_config.hpp"
