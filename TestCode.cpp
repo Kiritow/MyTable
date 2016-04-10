@@ -15,4 +15,5 @@ int main()
 	sprintf(buff,"Changed Line Filled");
 	setrawdata(handle,0,1,strlen(buff),buff);
 	close_table(handle);
+	return 0;
 }
