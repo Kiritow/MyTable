@@ -1,4 +1,4 @@
-[English](https://github.com/Kiritow/MyTable#mytable) | [中文(简体)](https://github.com/Kiritow/MyTable#mytable-1)  
+[English](#mytable) | [中文(简体)](#mytable-1)  
 # MyTable  
 **MyTable** is a light open-source self-made cross-platform database software.  
 Written in **C/C++**.  
